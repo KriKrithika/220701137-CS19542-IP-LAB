@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>timetable</title>
+        <style>
+            h1{
+                text-align: center;
+                color: rgb(4, 60, 68);
+            }  
+            ul.horizontal-list { 
+              list-style-type: none; 
+              margin: 0; 
+              padding: 0; 
+              display: flex; 
+            } 
+            ul.horizontal-list li { 
+              margin-right: 10px; 
+            } 
+            td,th{text-align: center;}
+            table, th, td {
+                border: 1px solid rgb(4, 60, 68);
+                border-collapse: collapse;
+            }
+            p{
+                font: size 30px;;
+                font-weight:bold;
+            }
+            .mystyle
+            {
+                border: 2px solid rgb(4, 60, 68);
+                background-color: rgb(230, 237, 237);
+                margin: auto;
+                padding: 30px;
+            }
+          </style> 
+    </head>
+    <body style="background-color: powderblue;">
+        <div class="mystyle">
+        <h1>TimeTable</h1><hr />
+        <ul class="horizontal-list">
+            <li>X</li>
+            <li>Sec:C</li>
+        </ul><hr />
+        <table width="100%">
+            <tr>
+                <th>Day/Time</th>
+                <th>1<br>8:30-9:30</th>
+                <th>2<br>9:30-10:30</th>
+                <th>10:30-10:40</th>
+                <th>3<br>10:40-11:40</th>
+                <th>4<br>11:40-12:40</th>
+                <th>12:40-01:40</th>
+                <th>5<br>1:40-2:40</th>
+                <th>6<br>2:40-3:30</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>Maths</td>
+                <td>Science</td>
+                <td rowspan="5" >BREAK</td>
+                <td>Social</td>
+                <td>Maths</td>
+                <td rowspan="5">LUNCH</td>
+                <td>English</td>
+                <td>Tamil</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>Social</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Tamil</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Science</td>
+                <td>Pt</td>
+                <td>Maths</td>
+                <td>Social</td>
+                <td>Tamil</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>English</td>
+                <td>Tamil</td>
+                <td>Maths</td>
+                <td>Social</td>
+                <td>Science</td>
+                <td>Lib</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>Maths</td>
+                <td>Tamil</td>
+                <td>Social</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Pt</td>
+            </tr>
+        </table>
+        <p style="color: rgb(4, 60, 68);">Faculty Details</p>
+        <table width="25%" >
+            <tr>
+                <th>Subject</th>
+                <th>Faculty Code</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>MA123</td>
+                <td>Scarlet</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>SC023</td>
+                <td>Jeccy</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>SO741</td>
+                <td>Steve</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>EN687</td>
+                <td>Harry</td>
+            </tr>
+            <tr>
+                <td>Tamil</td>
+                <td>TA682</td>
+                <td>Selvi</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
