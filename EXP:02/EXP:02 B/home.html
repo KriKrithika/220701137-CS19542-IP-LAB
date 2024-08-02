@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSE Dept</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script>
+        function displayContent(contentId) {
+            var content = {
+                'introduction': '<h2>Introduction</h2><h3>Vision</h3><p>To be an institution of excellence in Engineering, Technology and Management Education & Research. To provide competent and ethical professionals with a concern for society.<p><h3>Mission</h3><ul class="list"><li>To impart quality technical education imbibed with proficiency and humane values.</li><li>To provide right ambience and opportunities for the students to develop into creative, talented and globally competent professionals.</li><li>To promote research and development in technology and management for the benefit of the society.</li></ul>',
+                'opportunities': '<h2>Opportunities</h2><ul class="list"><li>Computer Science and Engineering (CSE) is a rapidly evolving field that offers a multitude of career opportunities. Graduates in CSE can find roles in diverse sectors including software development, cybersecurity, data science, artificial intelligence, and more. The demand for skilled professionals in these areas is ever-increasing, driven by the continuous advancement of technology and the growing reliance on digital solutions in business and everyday life.</li><li>Software development remains a core area, with opportunities to work on developing and maintaining applications, systems, and platforms that are fundamental to various industries. Cybersecurity is another crucial field, focusing on protecting systems and data from cyber threats, which is becoming increasingly important as cyber-attacks grow in frequency and sophistication. Data science and artificial intelligence are transforming industries by enabling data-driven decision-making and automating complex processes.</li><li>Additionally, CSE graduates can explore roles in academia, research, and entrepreneurship, contributing to innovative projects and startups. The versatility of a CSE degree also opens doors to interdisciplinary roles, combining knowledge of computer science with other domains such as healthcare, finance, and education.</li></ul>',
+                'faculty': '<h2>Faculty Members</h2><table class="tablee" ><tr><th>S.no</th><th>Name</th><th>Designation</th></tr><tr><td>1</td><td>Dr.V.Murali Bhaskaran</td><td>Professor and Dean</td></tr><tr><td>2</td><td>Dr.P.Kumar</td><td>Head and Director</td></tr><tr><td>3</td><td>Dr.Revathy P</td><td>Professor</td></tr>',
+                'labFaculty': '<h2>Lab Faculty</h2><table class="tablee" ><tr><th>S.no</th><th>Name</th><th>Designation</th></tr><tr><td>1</td><td>K.Ramcharan</td><td>Senior Lab tech</td></tr><tr><td>2</td><td>U.Sridhar</td><td>Ass Senior Lab tech</td></tr><tr><td>3</td><td>Devaki L</td><td>Lab tech and Professor</td></tr>',
+                'news': '<h2>News</h2><ul class="list"><li>REC in Top 20 Engineering Colleges in India REC is ranked 20th in Top 100 Private Engineering Colleges in India & 6th in Top 20 Engineering Colleges with Excellent Industry Exposure by Higher Education Review Magazine. Thank you Students, Parents, Faculty & Staff!.</li><li>WOMEN HACKATHONA one-day Women Hackathon exclusively for our students, in association with Tamil Nadu Centre of Excellence for Advanced Manufacturing is organized on 5th April 2024. Theme: Internet of Things, Smart Circles, Additive Manufacturing, Industrial Robotics, Smart Factory, and Automation, along with Virtual Twin Technology.</li><li>NIRF 2022<br>REC is ranked 86th in the country under Engineering category.<br>NIRF 2021<br>REC is Ranked 95th in the country under Engineering category.<br>NIRF 2020<br>REC is Ranked Top 10% amongst Technical Institutions India under NIRF.</li></ul>',
+            };
+            document.getElementById('mainContent').innerHTML = content[contentId];
+        }
+    </script>
+</head>
+<body style="background-color: rgb(244, 230, 244);">
+    <div class="header">
+        <u><h1>Rajalakshmi Engineering College</h1></u>
+        <h5>Rajalakshmi Nagar, Thadalam, Chennai-602 105</h5>
+    </div>
+    <div class="l-container">
+        <div class="li">
+            <h2 class="heading">CSE</h2>
+            <ul>
+                <li onclick="displayContent('introduction')">Introduction</li>
+                <li onclick="displayContent('opportunities')">Opportunities</li>
+                <li onclick="displayContent('faculty')">Faculty Members</li>
+                <li onclick="displayContent('labFaculty')">Lab Faculty</li>
+                <li onclick="displayContent('news')">News</li>
+            </ul>
+        </div>
+        <div class="content" id="mainContent">
+            <h2>Welcome to the department of CSE - Home Page</h2>
+        </div>
+    </div>
+</body>
+</html>
