@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="padding">
+        <h1>Student Details</h1>
+        <form id="MyForm">
+
+            Name:<br><input type="text" id="name" placeholder="NAME" required>
+            <span id="nameerror" class="error"></span><br><br>
+            
+            Roll No:<br><input type="text" id="rollno" placeholder="220701000" required>
+            <span id="rollnoerror" class="error"></span><br><br>
+            
+            Gender:<br>
+            <select id="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="others">Others</option>
+            </select><br><br>
+            
+            Year:<br>
+            <select id="year">
+                <option value="1year">I Year</option>
+                <option value="2year">II Year</option>
+                <option value="3year">III Year</option>
+                <option value="4year">IV Year</option>
+            </select><br><br>
+            
+            Department:<br><input type="text" id="dept" required>
+            <span id="depterror" class="error"></span><br><br>
+            
+            Section:<br>
+            <select id="section">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select><br><br>
+
+            Email ID:<br><input type="text" id="email" required>
+            <span id="emailerror" class="error"></span><br><br>
+            
+            Mobile Number:<br><input type="text" id="mobileno" required>
+            <span id="mobilenoerror" class="error"></span><br><br>
+            
+            Address:<br><textarea id="address" rows="5" cols="75" required></textarea>
+            <span id="addresserror" class="error"></span><br><br>
+            
+            City:<br><input type="text" id="city" required>
+            <span id="cityerror" class="error"></span><br><br>
+            
+            Pincode:<br><input type="text" id="pincode" required>
+            <span id="pincodeerror" class="error"></span><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <div id="messageContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
