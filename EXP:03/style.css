@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(5, 47, 46);
+}
+.padding{
+    border: 2px solid rgb(5, 47, 46);
+    background-color: rgb(215, 247, 246);
+    margin:0 auto;
+    padding:20px;
+    width:90%;
+}
+.error{
+    color: red;
+    font-size: large;
+    margin-left: 10px;
+}
+p{
+    color: green;
+    font-size: larger;
+}
